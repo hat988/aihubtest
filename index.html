@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Directory - Discover the Best AI Models and Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-box">
+                        <span class="logo-text">AI</span>
+                    </div>
+                    <h1 class="site-title">AI Directory</h1>
+                </div>
+                <div class="search-container">
+                    <div class="search-icon">
+                        <!-- Search SVG will be injected by JS -->
+                    </div>
+                    <input type="text" id="search-input" placeholder="Search AI models..." class="search-input"/>
+                    <button id="search-button" class="search-button">
+                        <span>Search</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar Ad Placeholder -->
+                <div class="glass-effect p-6 text-center">
+                    <p class="text-gray-400 text-sm">Sidebar Ad</p>
+                </div>
+
+                <!-- Filters -->
+                <div class="filters-section glass-effect">
+                    <div class="filters-header">
+                        <div class="filters-title-group">
+                            <!-- Filter SVG will be injected by JS -->
+                            <h2 class="filters-title">Filters</h2>
+                        </div>
+                        <button id="clear-all-filters-btn" class="clear-filters-button" style="display: none;">
+                            <!-- X SVG will be injected by JS -->
+                            <span>Clear All</span>
+                        </button>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="filter-group">
+                        <h3 class="filter-group-title">Categories</h3>
+                        <div id="categories-container" class="filter-options"></div>
+                    </div>
+
+                    <!-- Pricing -->
+                    <div class="filter-group">
+                        <h3 class="filter-group-title">Pricing</h3>
+                        <div id="pricing-container" class="filter-options"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="content-area">
+                <div class="mb-8">
+                    <h2 class="content-title">Discover AI Models & Tools</h2>
+                    <p class="content-subtitle">
+                        Find the perfect AI solution for your needs. <span id="tool-count"></span> tools available.
+                    </p>
+                </div>
+
+                <!-- AI Cards Grid -->
+                <div id="ai-cards-grid" class="ai-cards-grid"></div>
+
+                <!-- Pagination -->
+                <div id="pagination-container" class="pagination-container"></div>
+
+                <!-- Footer Ad Placeholder -->
+                <div class="mt-12 glass-effect p-8 text-center">
+                    <p>Footer Ad Space</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
