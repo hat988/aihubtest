@@ -109,6 +109,7 @@ const aiData = [
             "Cons": "Limited control over specific elements, sometimes overly stylized.",
             "Key features": "Generates visuals in photorealistic and abstract styles, supports collaboration within an active community, adapts prompts to refine artistic outputs."
         }
+
     },
     {
         "category": "Generative AI Models",
@@ -203,7 +204,7 @@ const aiData = [
             "Who is it for": "Enterprises automating HR, IT, sales, or sustainability workflows.",
             "Pros": "99% Uptime SLA, phone and SMS integration included, pipeline comparisons and leaderboards, GenAI model used: IBM granite-13b-chat, voice customization with multi-language support.",
             "Cons": "Learning Curve, tailored enterprise use can be costly for small teams.",
-            "Pricing": "Lite (Free: up to 1,000 monthly active users), Plus (From $140/month: 1,000+ monthly users)."
+            "Key features": "Lite (Free: up to 1,000 monthly active users), Plus (From $140/month: 1,000+ monthly users)."
         }
     },
     {
@@ -215,15 +216,7 @@ const aiData = [
             "Who is it for": "Developers and tech-savvy teams building AI-powered task automation.",
             "Pros": "Handles complex, multi-step tasks, agents can delegate tasks, form feedback loops, and remember past steps using short- and long-term memory.",
             "Cons": "Python-based (tricky for non-technical users), open-source (not ideal for handling confidential IP).",
-            "Pricing": "Not specified (open-source).",
-            "ChatGPT (GPT-4o)": "Best for overall AI image generation.",
-            "Midjourney": "Best for artistic results.",
-            "Reve": "Best for overall prompt adherence.",
-            "Ideogram": "Best for accurate text.",
-            "Stable Diffusion": "Best for customization and control of your AI images.",
-            "FLUX.1": "A Stable Diffusion alternative.",
-            "Adobe Firefly": "Best for integrating AI-generated images into photos.",
-            "Recraft": "Best for graphic design."
+            "Pricing": "Not specified (open-source)."
         }
     },
     {
@@ -296,7 +289,7 @@ const aiData = [
         "details": {
             "Max Resolution": "1080p",
             "Free Trial": "Yes",
-            "Cheapest Price (USD)": "$8/month",
+            "Cheapest Price (USD)": "Free",
             "Text to Video": "Yes",
             "Image to Video": "Yes",
             "Edit/Update Output": "Yes",
@@ -312,45 +305,13 @@ const aiData = [
         "details": {
             "Max Resolution": "1080p",
             "Free Trial": "Yes",
-            "Cheapest Price (USD)": "$29/month",
+            "Cheapest Price (USD)": "$24/month",
             "Text to Video": "Yes",
             "Image to Video": "Yes",
             "Edit/Update Output": "Yes",
             "Max Shot Length (sec)": "5",
             "Camera Controls": "No",
             "Lip Sync": "Yes",
-            "Sound Generation": "Yes"
-        }
-    },
-    {
-        "category": "Video Generation AIs",
-        "name": "Synthesys",
-        "details": {
-            "Max Resolution": "1080p",
-            "Free Trial": "Yes",
-            "Cheapest Price (USD)": "$29/month",
-            "Text to Video": "Yes",
-            "Image to Video": "Yes",
-            "Edit/Update Output": "Yes",
-            "Max Shot Length (sec)": "5",
-            "Camera Controls": "No",
-            "Lip Sync": "Yes",
-            "Sound Generation": "Yes"
-        }
-    },
-    {
-        "category": "Video Generation AIs",
-        "name": "Pictory",
-        "details": {
-            "Max Resolution": "1080p",
-            "Free Trial": "Yes",
-            "Cheapest Price (USD)": "$19/month",
-            "Text to Video": "Yes",
-            "Image to Video": "Yes",
-            "Edit/Update Output": "Yes",
-            "Max Shot Length (sec)": "10",
-            "Camera Controls": "No",
-            "Lip Sync": "No",
             "Sound Generation": "Yes"
         }
     },
@@ -372,15 +333,15 @@ const aiData = [
     },
     {
         "category": "Video Generation AIs",
-        "name": "Fliki",
+        "name": "Synthesys",
         "details": {
             "Max Resolution": "1080p",
             "Free Trial": "Yes",
-            "Cheapest Price (USD)": "$21/month",
+            "Cheapest Price (USD)": "$29/month",
             "Text to Video": "Yes",
-            "Image to Video": "Yes",
+            "Image to Video": "No",
             "Edit/Update Output": "Yes",
-            "Max Shot Length (sec)": "5",
+            "Max Shot Length (sec)": "Unlimited",
             "Camera Controls": "No",
             "Lip Sync": "Yes",
             "Sound Generation": "Yes"
@@ -388,15 +349,47 @@ const aiData = [
     },
     {
         "category": "Video Generation AIs",
-        "name": "InVideo AI",
+        "name": "Pictory",
         "details": {
             "Max Resolution": "1080p",
             "Free Trial": "Yes",
-            "Cheapest Price (USD)": "$20/month",
+            "Cheapest Price (USD)": "$19/month",
             "Text to Video": "Yes",
             "Image to Video": "Yes",
             "Edit/Update Output": "Yes",
-            "Max Shot Length (sec)": "15",
+            "Max Shot Length (sec)": "Unlimited",
+            "Camera Controls": "No",
+            "Lip Sync": "No",
+            "Sound Generation": "Yes"
+        }
+    },
+    {
+        "category": "Video Generation AIs",
+        "name": "FlexClip",
+        "details": {
+            "Max Resolution": "1080p",
+            "Free Trial": "Yes",
+            "Cheapest Price (USD)": "$9.99/month",
+            "Text to Video": "Yes",
+            "Image to Video": "Yes",
+            "Edit/Update Output": "Yes",
+            "Max Shot Length (sec)": "Unlimited",
+            "Camera Controls": "No",
+            "Lip Sync": "No",
+            "Sound Generation": "Yes"
+        }
+    },
+    {
+        "category": "Video Generation AIs",
+        "name": "InVideo",
+        "details": {
+            "Max Resolution": "1080p",
+            "Free Trial": "Yes",
+            "Cheapest Price (USD)": "$15/month",
+            "Text to Video": "Yes",
+            "Image to Video": "Yes",
+            "Edit/Update Output": "Yes",
+            "Max Shot Length (sec)": "Unlimited",
             "Camera Controls": "No",
             "Lip Sync": "No",
             "Sound Generation": "Yes"
@@ -412,9 +405,9 @@ const aiData = [
             "Text to Video": "Yes",
             "Image to Video": "Yes",
             "Edit/Update Output": "Yes",
-            "Max Shot Length (sec)": "10",
+            "Max Shot Length (sec)": "Unlimited",
             "Camera Controls": "No",
-            "Lip Sync": "Yes",
+            "Lip Sync": "No",
             "Sound Generation": "Yes"
         }
     },
@@ -428,23 +421,7 @@ const aiData = [
             "Text to Video": "Yes",
             "Image to Video": "Yes",
             "Edit/Update Output": "Yes",
-            "Max Shot Length (sec)": "5",
-            "Camera Controls": "No",
-            "Lip Sync": "Yes",
-            "Sound Generation": "Yes"
-        }
-    },
-    {
-        "category": "Video Generation AIs",
-        "name": "FlexClip",
-        "details": {
-            "Max Resolution": "1080p",
-            "Free Trial": "Yes",
-            "Cheapest Price (USD)": "$9.99/month",
-            "Text to Video": "Yes",
-            "Image to Video": "Yes",
-            "Edit/Update Output": "Yes",
-            "Max Shot Length (sec)": "10",
+            "Max Shot Length (sec)": "Unlimited",
             "Camera Controls": "No",
             "Lip Sync": "No",
             "Sound Generation": "Yes"
@@ -456,188 +433,146 @@ const aiData = [
         "details": {
             "Max Resolution": "1080p",
             "Free Trial": "Yes",
+            "Cheapest Price (USD)": "$18/month",
+            "Text to Video": "Yes",
+            "Image to Video": "Yes",
+            "Edit/Update Output": "Yes",
+            "Max Shot Length (sec)": "Unlimited",
+            "Camera Controls": "No",
+            "Lip Sync": "No",
+            "Sound Generation": "Yes"
+        }
+    },
+    {
+        "category": "Video Generation AIs",
+        "name": "Kapwing",
+        "details": {
+            "Max Resolution": "1080p",
+            "Free Trial": "Yes",
+            "Cheapest Price (USD)": "$16/month",
+            "Text to Video": "Yes",
+            "Image to Video": "Yes",
+            "Edit/Update Output": "Yes",
+            "Max Shot Length (sec)": "Unlimited",
+            "Camera Controls": "No",
+            "Lip Sync": "No",
+            "Sound Generation": "Yes"
+        }
+    },
+    {
+        "category": "Video Generation AIs",
+        "name": "Descript",
+        "details": {
+            "Max Resolution": "1080p",
+            "Free Trial": "Yes",
             "Cheapest Price (USD)": "$12/month",
             "Text to Video": "Yes",
             "Image to Video": "Yes",
             "Edit/Update Output": "Yes",
-            "Max Shot Length (sec)": "5",
+            "Max Shot Length (sec)": "Unlimited",
             "Camera Controls": "No",
             "Lip Sync": "Yes",
             "Sound Generation": "Yes"
-        }
-    },
-    {
-        "category": "Video Generation AIs",
-        "name": "CapCut",
-        "details": {
-            "Max Resolution": "1080p",
-            "Free Trial": "Yes",
-            "Cheapest Price (USD)": "Free",
-            "Text to Video": "Yes",
-            "Image to Video": "Yes",
-            "Edit/Update Output": "Yes",
-            "Max Shot Length (sec)": "5",
-            "Camera Controls": "No",
-            "Lip Sync": "Yes",
-            "Sound Generation": "Yes"
-        }
-    },
-    {
-        "category": "Video Generation AIs",
-        "name": "Deepbrain AI",
-        "details": {
-            "Max Resolution": "1080p",
-            "Free Trial": "Yes",
-            "Cheapest Price (USD)": "$30/month",
-            "Text to Video": "Yes",
-            "Image to Video": "Yes",
-            "Edit/Update Output": "Yes",
-            "Max Shot Length (sec)": "5",
-            "Camera Controls": "No",
-            "Lip Sync": "Yes",
-            "Sound Generation": "Yes"
-        }
-    },
-    {
-        "category": "Video Generation AIs",
-        "name": "Viide.io",
-        "details": {
-            "Max Resolution": "1080p",
-            "Free Trial": "Yes",
-            "Cheapest Price (USD)": "$19/month",
-            "Text to Video": "Yes",
-            "Image to Video": "Yes",
-            "Edit/Update Output": "Yes",
-            "Max Shot Length (sec)": "5",
-            "Camera Controls": "No",
-            "Lip Sync": "Yes",
-            "Sound Generation": "Yes"
-        }
-    },
-    {
-        "category": "Text Generation AIs",
-        "name": "Rytr",
-        "details": {
-            "Best for": "Generating content for blogs, emails, and social media.",
-            "Pros": "Supports over 30 languages and offers various tones.",
-            "Cons": "Limited for long-form content, may require manual editing.",
-            "Key features": "Supports over 30 languages and various tones, generates content for blogs, emails, and social media, offers a plagiarism checker."
         }
     },
     {
         "category": "Text Generation AIs",
         "name": "Writesonic",
         "details": {
-            "Best for": "Creating high-quality articles, blog posts, and marketing copy.",
-            "Pros": "Integrates with WordPress and offers a wide range of templates.",
+            "Best for": "Generating high-quality articles, blog posts, and marketing copy.",
+            "Pros": "Offers a wide range of templates, integrates with Surfer SEO, and supports multiple languages.",
             "Cons": "Can be expensive for high-volume content generation.",
-            "Key features": "Generates high-quality articles, blog posts, and marketing copy, integrates with WordPress for seamless publishing, offers a wide range of templates for various content types."
+            "Key features": "AI article writer, paraphrasing tool, content rephraser, and grammar checker."
         }
     },
     {
         "category": "Text Generation AIs",
-        "name": "Anyword",
+        "name": "Rytr",
         "details": {
-            "Best for": "Optimizing marketing copy for conversions.",
-            "Pros": "Predictive performance scoring and integrates with various platforms.",
-            "Cons": "Primarily focused on marketing, not suitable for general writing.",
-            "Key features": "Optimizes marketing copy for conversions, provides predictive performance scoring, integrates with various platforms like Google Ads and Facebook Ads."
-        }
-    },
-    {
-        "category": "Text Generation AIs",
-        "name": "Surfer SEO",
-        "details": {
-            "Best for": "Optimizing content for search engines.",
-            "Pros": "Provides content outlines, keyword suggestions, and plagiarism checks.",
-            "Cons": "Requires a learning curve for SEO beginners.",
-            "Key features": "Optimizes content for search engines, provides content outlines and keyword suggestions, offers a plagiarism checker."
+            "Best for": "Quick content generation for various use cases, including social media and emails.",
+            "Pros": "Affordable, user-friendly interface, and supports over 30 languages.",
+            "Cons": "Limited long-form content capabilities.",
+            "Key features": "AI writing assistant, content generator, and copywriting tool."
         }
     },
     {
         "category": "Text Generation AIs",
         "name": "Peppertype.ai",
         "details": {
-            "Best for": "Generating creative content for marketing and sales.",
-            "Pros": "Supports over 20 content types and offers various tones.",
-            "Cons": "Limited for long-form content, may require manual editing.",
-            "Key features": "Generates creative content for marketing and sales, supports over 20 content types and offers various tones, provides a plagiarism checker."
+            "Best for": "Creating engaging content for marketing, sales, and product descriptions.",
+            "Pros": "Provides unique content ideas, supports multiple content formats, and offers a plagiarism checker.",
+            "Cons": "May require some manual editing for complex topics.",
+            "Key features": "AI content generator, content rewriter, and blog idea generator."
+        }
+    },
+    {
+        "category": "Text Generation AIs",
+        "name": "Anyword",
+        "details": {
+            "Best for": "Optimizing marketing copy for better conversion rates.",
+            "Pros": "Predictive performance scoring, integrates with various marketing platforms, and offers custom keywords.",
+            "Cons": "Can be complex for beginners due to advanced features.",
+            "Key features": "AI copywriting tool, content optimization, and predictive performance scoring."
+        }
+    },
+    {
+        "category": "Text Generation AIs",
+        "name": "ContentBot.ai",
+        "details": {
+            "Best for": "Automating content creation for websites, blogs, and social media.",
+            "Pros": "Offers a wide range of content types, supports long-form content, and provides a WordPress plugin.",
+            "Cons": "Output quality can vary, requiring human review.",
+            "Key features": "AI content generator, blog post writer, and social media content creator."
         }
     },
     {
         "category": "Audio Generation AIs",
         "name": "Murf.ai",
         "details": {
-            "Best for": "Creating realistic voiceovers for videos, podcasts, and presentations.",
-            "Pros": "Offers a wide range of voices and languages, supports custom voice cloning.",
+            "Best for": "Generating realistic voiceovers for videos, podcasts, and presentations.",
+            "Pros": "Offers a wide range of natural-sounding voices, supports multiple languages, and provides custom pronunciation.",
             "Cons": "Can be expensive for high-volume usage.",
-            "Key features": "Offers a wide range of realistic voices and languages, supports custom voice cloning, integrates with various platforms for seamless publishing."
-        }
-    },
-    {
-        "category": "Audio Generation AIs",
-        "name": "WellSaid Labs",
-        "details": {
-            "Best for": "Generating high-quality voiceovers for corporate training, e-learning, and marketing.",
-            "Pros": "Offers a wide range of voices and languages, supports custom voice cloning.",
-            "Cons": "Can be expensive for high-volume usage.",
-            "Key features": "Offers a wide range of realistic voices and languages, supports custom voice cloning, integrates with various platforms for seamless publishing."
-        }
-    },
-    {
-        "category": "Audio Generation AIs",
-        "name": "Resemble.ai",
-        "details": {
-            "Best for": "Creating realistic voiceovers for videos, podcasts, and presentations.",
-            "Pros": "Offers a wide range of voices and languages, supports custom voice cloning.",
-            "Cons": "Can be expensive for high-volume usage.",
-            "Key features": "Offers a wide range of realistic voices and languages, supports custom voice cloning, integrates with various platforms for seamless publishing."
+            "Key features": "AI voice generator, text-to-speech, and voice cloning."
         }
     },
     {
         "category": "Audio Generation AIs",
         "name": "Play.ht",
         "details": {
-            "Best for": "Generating realistic voiceovers for videos, podcasts, and presentations.",
-            "Pros": "Offers a wide range of voices and languages, supports custom voice cloning.",
-            "Cons": "Can be expensive for high-volume usage.",
-            "Key features": "Offers a wide range of realistic voices and languages, supports custom voice cloning, integrates with various platforms for seamless publishing."
+            "Best for": "Converting text to speech for audio articles, e-learning, and audiobooks.",
+            "Pros": "Offers realistic voices, supports multiple languages, and provides an API for integration.",
+            "Cons": "Some voices may sound robotic.",
+            "Key features": "AI voice generator, text-to-speech, and audio articles."
         }
     },
     {
         "category": "Audio Generation AIs",
-        "name": "LoVO",
+        "name": "Resemble.ai",
         "details": {
-            "Best for": "Generating realistic voiceovers for videos, podcasts, and presentations.",
-            "Pros": "Offers a wide range of voices and languages, supports custom voice cloning.",
-            "Cons": "Can be expensive for high-volume usage.",
-            "Key features": "Offers a wide range of realistic voices and languages, supports custom voice cloning, integrates with various platforms for seamless publishing."
+            "Best for": "Creating custom AI voices for branding, entertainment, and virtual assistants.",
+            "Pros": "Offers high-quality voice cloning, supports real-time voice generation, and provides emotion control.",
+            "Cons": "Requires a significant amount of training data for custom voices.",
+            "Key features": "AI voice cloning, text-to-speech, and emotion control."
         }
     },
     {
-        "category": "AI Agents",
-        "name": "Genspark",
+        "category": "Audio Generation AIs",
+        "name": "WellSaid Labs",
         "details": {
-            "Best for": "Automating complex workflows and tasks.",
-            "What it does": "Genspark is an AI agent designed to automate various business processes, from data analysis to customer support.",
-            "Who is it for": "Businesses looking to streamline operations and improve efficiency.",
-            "Pros": "Highly customizable, integrates with existing systems, reduces manual effort.",
-            "Cons": "Requires initial setup and configuration, may need technical expertise.",
-            "Pricing": "Contact for pricing.",
-            "website": "https://www.genspark.ai/"
+            "Best for": "Generating professional voiceovers for corporate videos, training modules, and marketing content.",
+            "Pros": "Offers a diverse library of natural-sounding voices, supports custom pronunciation, and provides a user-friendly interface.",
+            "Cons": "Limited customization options for voice characteristics.",
+            "Key features": "AI voice generator, text-to-speech, and custom voice avatars."
         }
     },
     {
-        "category": "AI Agents",
-        "name": "Manus",
+        "category": "Audio Generation AIs",
+        "name": "Voicely",
         "details": {
-            "Best for": "Autonomous task execution and problem-solving.",
-            "What it does": "Manus is an autonomous AI agent capable of understanding complex instructions, performing deep research, and executing tasks across various digital environments.",
-            "Who is it for": "Users and businesses requiring advanced automation and intelligent assistance.",
-            "Pros": "Highly versatile, deep research capabilities, adaptable to open-ended objectives.",
-            "Cons": "Requires detailed instructions for optimal performance, still under active development.",
-            "Pricing": "Contact for pricing.",
-            "website": "https://www.manusai.io/"
+            "Best for": "Quickly generating voiceovers for videos, podcasts, and social media content.",
+            "Pros": "Easy to use, offers a variety of voices, and supports background music.",
+            "Cons": "Voice quality may not be as high as other premium tools.",
+            "Key features": "AI voice generator, text-to-speech, and background music integration."
         }
     },
     {
@@ -645,356 +580,370 @@ const aiData = [
         "name": "GPT-4.5",
         "details": {
             "Description": "OpenAI\u2019s latest experimental research model with an expanded context window and improved reasoning capabilities.",
-            "Key features": "Enhanced context understanding, multi-modal reasoning, advanced problem-solving.",
-            "Pricing": "Paid",
-            "website": "https://openai.com/"
+            "Key Features": "Enhanced long-context understanding, superior logical reasoning, advanced code generation, multimodal capabilities.",
+            "Use Cases": "Complex research, advanced programming, creative writing, multi-modal content creation.",
+            "Availability": "Limited access, primarily for researchers and enterprise partners."
         }
     },
     {
         "category": "Latest Generative AI Models 2025",
         "name": "Grok 3",
         "details": {
-            "Description": "Beta version of xAI\u2019s reasoning model by Elon Musk, focusing on real-time information and humor.",
-            "Key features": "Real-time data access, unique humor integration, strong reasoning.",
-            "Pricing": "Paid",
-            "website": "https://x.ai/"
+            "Description": "xAI\u2019s latest model, focusing on real-time information processing and controversial topic handling.",
+            "Key Features": "Real-time data integration, uncensored responses, strong reasoning in niche areas, direct access to X (formerly Twitter) data.",
+            "Use Cases": "Breaking news analysis, real-time market insights, social media trend prediction, controversial debate simulation.",
+            "Availability": "Early access for select users on X platform."
         }
     },
     {
         "category": "Latest Generative AI Models 2025",
         "name": "Gemini 2.0",
         "details": {
-            "Description": "Google\u2019s next-generation multimodal AI, offering significant improvements in understanding and generation across text, image, audio, and video.",
-            "Key features": "Advanced multimodal capabilities, improved efficiency, broader application.",
-            "Pricing": "Freemium",
-            "website": "https://gemini.google.com/"
+            "Description": "Google\u2019s next-generation multimodal AI, with significant improvements in understanding and generating diverse data formats.",
+            "Key Features": "Seamless integration of text, image, audio, and video inputs/outputs, enhanced reasoning across modalities, improved efficiency and speed.",
+            "Use Cases": "Advanced content creation (video scripts from images, music from text), complex problem-solving, interactive AI experiences.",
+            "Availability": "Phased rollout to Google Cloud customers and select developers."
         }
     },
     {
         "category": "Latest Generative AI Models 2025",
-        "name": "Llama 4 Maverick",
+        "name": "Llama 4",
         "details": {
-            "Description": "Meta\u2019s latest open-source model, enhanced with improved reasoning and coding abilities.",
-            "Key features": "Open-source, enhanced reasoning, improved coding.",
-            "Pricing": "Free",
-            "website": "https://ai.meta.com/llama/"
+            "Description": "Meta\u2019s latest open-source large language model, designed for broader accessibility and fine-tuning.",
+            "Key Features": "Improved performance on benchmarks, more efficient fine-tuning, enhanced multilingual support, stronger ethical AI guardrails.",
+            "Use Cases": "Custom chatbot development, research in academic settings, enterprise-specific language models, open-source AI innovation.",
+            "Availability": "Publicly available for research and commercial use under a permissive license."
         }
     },
     {
         "category": "Latest Generative AI Models 2025",
-        "name": "DeepSeek V3 0324",
+        "name": "DeepMind AlphaCode 2",
         "details": {
-            "Description": "A highly cost-effective, fast, and affordable conversational model from DeepSeek.",
-            "Key features": "Cost-effective, fast, conversational.",
-            "Pricing": "Free",
-            "website": "https://www.deepseek.com/"
+            "Description": "DeepMind\u2019s advanced AI for competitive programming, capable of solving complex coding challenges.",
+            "Key Features": "Superior problem-solving in competitive programming, generates optimized and efficient code, understands complex algorithmic requirements.",
+            "Use Cases": "Automated competitive programming, code optimization, software development assistance, algorithmic research.",
+            "Availability": "Research preview, limited access for academic and industry partners."
         }
     },
     {
         "category": "Latest Generative AI Models 2025",
-        "name": "Ideogram",
+        "name": "Mistral 8x22B",
         "details": {
-            "Description": "A text-to-image model with strong instruction following and typography capabilities.",
-            "Key features": "Accurate text rendering in images, high-quality image generation.",
-            "Pricing": "Freemium",
-            "website": "https://ideogram.ai/"
+            "Description": "Mistral AI\u2019s new Mixture-of-Experts (MoE) model, offering a balance of performance and efficiency.",
+            "Key Features": "High performance with reduced computational cost, efficient inference, strong multilingual capabilities, versatile for various NLP tasks.",
+            "Use Cases": "Cost-effective large-scale deployments, real-time applications, multilingual content generation, research and development.",
+            "Availability": "Available via API and for self-hosting."
+        }
+    },
+    {
+        "category": "AI Agents",
+        "name": "Genspark",
+        "details": {
+            "Best for": "Automated research and content generation.",
+            "What it does": "Genspark is an AI search engine that generates a 'Sparkpage' \u2014 a dynamic, customizable webpage summarizing search results, answering questions, and providing relevant links. It aims to provide comprehensive answers and resources directly, reducing the need to click through multiple links.",
+            "Who is it for": "Researchers, content creators, students, and anyone needing quick, summarized information from the web.",
+            "Pros": "Generates comprehensive summaries, customizable output, saves time by consolidating information, provides sources for verification.",
+            "Cons": "May sometimes lack the depth of manual research, customization requires user input.",
+            "Pricing": "Not specified (likely freemium or subscription-based)."
+        }
+    },
+    {
+        "category": "AI Agents",
+        "name": "Manus",
+        "details": {
+            "Best for": "Autonomous task execution and complex problem-solving.",
+            "What it does": "Manus is an autonomous general AI agent capable of understanding complex instructions, performing deep research, analyzing data, generating content (text, image, video), building applications, and automating workflows. It operates in a sandboxed environment with access to various tools (shell, browser, file system, media generation, etc.) to achieve open-ended objectives.",
+            "Who is it for": "Users with complex, multi-step tasks that require intelligent automation, researchers, developers, and businesses looking to automate advanced digital workflows.",
+            "Pros": "Highly autonomous, versatile across many domains, can perform deep research and analysis, capable of creative generation, automates complex workflows.",
+            "Cons": "Requires clear and detailed instructions for optimal performance, may take time for complex tasks, not suitable for simple, quick queries.",
+            "Pricing": "Subscription-based, tiered pricing depending on usage and features."
         }
     }
 ];
 
-// Global state variables
-let searchTerm = "";
-let selectedCategories = [];
-let selectedPricing = [];
+// SVG Icons (Lucide Icons - simplified for direct embedding)
+const searchIconSVG = 
+    `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>`;
+
+const filterIconSVG = 
+    `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-filter"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>`;
+
+const xIconSVG = 
+    `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`;
+
+const externalLinkIconSVG = 
+    `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>`;
+
+// DOM Elements
+const searchInput = document.getElementById("search-input");
+const searchButton = document.getElementById("search-button");
+const searchIconContainer = document.querySelector(".search-icon");
+const filterIconContainer = document.querySelector(".filters-title-group");
+const clearAllFiltersBtn = document.getElementById("clear-all-filters-btn");
+const categoriesContainer = document.getElementById("categories-container");
+const pricingContainer = document.getElementById("pricing-container");
+const aiCardsGrid = document.getElementById("ai-cards-grid");
+const toolCountSpan = document.getElementById("tool-count");
+const paginationContainer = document.getElementById("pagination-container");
+const hamburgerMenu = document.getElementById("hamburger-menu");
+const sidebar = document.getElementById("sidebar");
+
+// Inject SVGs
+searchIconContainer.innerHTML = searchIconSVG;
+filterIconContainer.insertAdjacentHTML("afterbegin", filterIconSVG);
+clearAllFiltersBtn.insertAdjacentHTML("afterbegin", xIconSVG);
+
+// State variables
 let currentPage = 1;
 const itemsPerPage = 9;
+let selectedCategories = new Set();
+let selectedPricing = new Set();
+let searchTerm = "";
 
-// SVG Icons (Lucide-react equivalents)
-const SearchIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>`;
-const FilterIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-filter"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>`;
-const ExternalLinkIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>`;
-const XIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`;
-
-// Helper function to get unique categories and pricing types
-function getFilterOptions() {
-    const categories = {};
-    const pricingTypes = { "Free": 0, "Freemium": 0, "Paid": 0 };
-
-    aiData.forEach(ai => {
-        if (ai.category) {
-            categories[ai.category] = (categories[ai.category] || 0) + 1;
+// Helper to get pricing from details
+function getPricing(details) {
+    if (details.Pricing) {
+        const pricingText = details.Pricing.toLowerCase();
+        if (pricingText.includes("free")) {
+            if (pricingText.includes("then")) return "Freemium";
+            return "Free";
         }
-        // Check for pricing in details object first, then directly on AI object
-        let pricing = null;
-        if (ai.details && ai.details.Pricing) {
-            pricing = ai.details.Pricing;
-        } else if (ai.pricing) { // Fallback to direct pricing property if it exists
-            pricing = ai.pricing;
-        }
-
-        if (pricing) {
-            const formattedPricing = pricing.charAt(0).toUpperCase() + pricing.slice(1).toLowerCase();
-            if (pricingTypes.hasOwnProperty(formattedPricing)) {
-                pricingTypes[formattedPricing]++;
-            }
-        }
-    });
-    return { categories, pricingTypes };
+        if (pricingText.includes("month") || pricingText.includes("paid")) return "Paid";
+    }
+    if (details["Free Trial"] && details["Free Trial"].toLowerCase() === "yes") {
+        return "Freemium"; // Assume free trial implies freemium
+    }
+    return "Unknown";
 }
 
-let { categories, pricingTypes } = getFilterOptions();
-
-// Function to filter AIs
-function filterAIs() {
-    let filtered = aiData.filter(ai => {
-        const matchesSearch = (ai.name && ai.name.toLowerCase().includes(searchTerm.toLowerCase())) ||
-                              (ai.description && ai.description.toLowerCase().includes(searchTerm.toLowerCase())) ||
-                              (ai.details && Object.values(ai.details).some(detail => String(detail).toLowerCase().includes(searchTerm.toLowerCase())));
-        
-        const matchesCategory = selectedCategories.length === 0 || 
-                                (ai.category && selectedCategories.includes(ai.category));
-        
-        let aiPricing = null;
-        if (ai.details && ai.details.Pricing) {
-            aiPricing = ai.details.Pricing;
-        } else if (ai.pricing) {
-            aiPricing = ai.pricing;
-        }
-
-        const matchesPricing = selectedPricing.length === 0 || 
-                               (aiPricing && selectedPricing.some(price => 
-                                  aiPricing.toLowerCase() === price.toLowerCase()
-                                ));
-        
-        return matchesSearch && matchesCategory && matchesPricing;
-    });
-    return filtered;
-}
-
-// Function to render AI cards
-function renderAICards() {
-    const filtered = filterAIs();
-    const totalPages = Math.ceil(filtered.length / itemsPerPage);
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-    const currentAIs = filtered.slice(startIndex, endIndex);
-
-    const aiCardsGrid = document.getElementById("ai-cards-grid");
-    aiCardsGrid.innerHTML = ""; // Clear previous cards
-
-    if (currentAIs.length === 0) {
-        aiCardsGrid.innerHTML = `<p class="text-gray-300 text-center col-span-full">No AI models found matching your criteria.</p>`;
+// Render AI Cards
+function renderAICards(ais) {
+    aiCardsGrid.innerHTML = "";
+    if (ais.length === 0) {
+        aiCardsGrid.innerHTML = 
+            `<div class="text-center text-gray-400 col-span-full py-12">
+                No AI models found matching your criteria.
+            </div>`;
+        toolCountSpan.textContent = 0;
+        paginationContainer.innerHTML = "";
+        return;
     }
 
-    currentAIs.forEach((ai, index) => {
+    toolCountSpan.textContent = ais.length;
+
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const paginatedAIs = ais.slice(startIndex, endIndex);
+
+    paginatedAIs.forEach(ai => {
+        const pricing = getPricing(ai.details);
         const card = document.createElement("div");
-        card.className = "ai-card glass-effect fade-in-up";
-        card.style.animationDelay = `${index * 100}ms`;
-
-        const aiName = ai.name || "Unknown AI";
-        const aiDescription = ai.description || (ai.details && ai.details["Best for"]) || "No description available.";
-        const aiPricing = (ai.details && ai.details.Pricing) || ai.pricing || "Unknown";
-        const aiFeatures = (ai.details && ai.details["Key features"]) ? (Array.isArray(ai.details["Key features"]) ? ai.details["Key features"] : [ai.details["Key features"]]) : [];
-        const aiWebsite = ai.website || "#";
-
+        card.className = "ai-card fade-in-up";
         card.innerHTML = `
             <div class="ai-card-header">
                 <div class="ai-logo-placeholder">
-                    <span>${aiName.substring(0, 2).toUpperCase()}</span>
+                    <span>${ai.name.substring(0, 2).toUpperCase()}</span>
                 </div>
                 <div class="ai-info">
-                    <h3 class="ai-name">${aiName}</h3>
-                    <span class="ai-pricing">${aiPricing}</span>
+                    <h3 class="ai-name">${ai.name}</h3>
+                    <span class="ai-pricing">${pricing}</span>
                 </div>
             </div>
-            <p class="ai-description">${aiDescription}</p>
-            <div class="ai-features">
-                ${aiFeatures.slice(0, 3).map(feature => `<span class="ai-feature-tag">${feature}</span>`).join("")}
-            </div>
-            <a
-                href="${aiWebsite}?utm_source=aidirectory&utm_medium=referral&utm_campaign=ai_discovery"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="visit-button"
-            >
-                ${ExternalLinkIcon}
-                <span>Visit Platform</span>
+            <p class="ai-description">${ai.details.Description || ai.details["Best for"] || ai.details["What it does"] || "No description available."}</p>
+            <a href="#" class="visit-button" data-url="${ai.details.URL || '#'}">
+                Visit Platform ${externalLinkIconSVG}
             </a>
         `;
         aiCardsGrid.appendChild(card);
     });
 
-    renderPagination(totalPages);
-    updateToolCount(filtered.length);
+    // Add click listener for visit buttons
+    aiCardsGrid.querySelectorAll(".visit-button").forEach(button => {
+        button.addEventListener("click", (event) => {
+            event.preventDefault();
+            const originalUrl = button.dataset.url;
+            if (originalUrl && originalUrl !== '#') {
+                const utmUrl = new URL(originalUrl);
+                utmUrl.searchParams.set("utm_source", "aidirectory");
+                utmUrl.searchParams.set("utm_medium", "referral");
+                utmUrl.searchParams.set("utm_campaign", "ai_discovery");
+                window.open(utmUrl.toString(), "_blank");
+            }
+        });
+    });
+
+    renderPagination(ais.length);
 }
 
-// Function to update tool count
-function updateToolCount(count) {
-    document.getElementById("tool-count").textContent = count;
+// Render Filters
+function renderFilters() {
+    // Categories
+    const allCategories = [...new Set(aiData.map(ai => ai.category))];
+    categoriesContainer.innerHTML = "";
+    allCategories.forEach(category => {
+        const count = aiData.filter(ai => ai.category === category).length;
+        const isChecked = selectedCategories.has(category);
+        categoriesContainer.innerHTML += `
+            <label class="filter-option-label">
+                <input type="checkbox" class="filter-checkbox category-filter" value="${category}" ${isChecked ? "checked" : ""}>
+                <span class="filter-option-text">${category}</span>
+                <span class="filter-option-count">${count}</span>
+            </label>
+        `;
+    });
+
+    // Pricing
+    const allPricingOptions = ["Free", "Freemium", "Paid"];
+    pricingContainer.innerHTML = "";
+    allPricingOptions.forEach(pricing => {
+        const count = aiData.filter(ai => getPricing(ai.details) === pricing).length;
+        const isChecked = selectedPricing.has(pricing);
+        pricingContainer.innerHTML += `
+            <label class="filter-option-label">
+                <input type="checkbox" class="filter-checkbox pricing-filter" value="${pricing}" ${isChecked ? "checked" : ""}>
+                <span class="filter-option-text">${pricing}</span>
+                <span class="filter-option-count">${count}</span>
+            </label>
+        `;
+    });
+
+    // Event Listeners for Filters
+    document.querySelectorAll(".category-filter").forEach(checkbox => {
+        checkbox.addEventListener("change", (event) => {
+            if (event.target.checked) {
+                selectedCategories.add(event.target.value);
+            } else {
+                selectedCategories.delete(event.target.value);
+            }
+            currentPage = 1; // Reset to first page on filter change
+            filterAndRender();
+        });
+    });
+
+    document.querySelectorAll(".pricing-filter").forEach(checkbox => {
+        checkbox.addEventListener("change", (event) => {
+            if (event.target.checked) {
+                selectedPricing.add(event.target.value);
+            } else {
+                selectedPricing.delete(event.target.value);
+            }
+            currentPage = 1; // Reset to first page on filter change
+            filterAndRender();
+        });
+    });
+
+    // Show/hide Clear All button
+    if (selectedCategories.size > 0 || selectedPricing.size > 0 || searchTerm !== "") {
+        clearAllFiltersBtn.style.display = "flex";
+    } else {
+        clearAllFiltersBtn.style.display = "none";
+    }
 }
 
-// Function to render pagination controls
-function renderPagination(totalPages) {
-    const paginationContainer = document.getElementById("pagination-container");
+// Filter and Render
+function filterAndRender() {
+    let filteredAIs = aiData.filter(ai => {
+        const matchesCategory = selectedCategories.size === 0 || selectedCategories.has(ai.category);
+        const matchesPricing = selectedPricing.size === 0 || selectedPricing.has(getPricing(ai.details));
+        const matchesSearch = searchTerm === "" || 
+                              ai.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                              (ai.details.Description && ai.details.Description.toLowerCase().includes(searchTerm.toLowerCase())) ||
+                              (ai.details["Best for"] && ai.details["Best for"].toLowerCase().includes(searchTerm.toLowerCase())) ||
+                              (ai.details["What it does"] && ai.details["What it does"].toLowerCase().includes(searchTerm.toLowerCase()));
+        
+        return matchesCategory && matchesPricing && matchesSearch;
+    });
+
+    renderAICards(filteredAIs);
+}
+
+// Render Pagination
+function renderPagination(totalItems) {
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
     paginationContainer.innerHTML = "";
 
     if (totalPages <= 1) return;
 
-    const createButton = (text, page, isDisabled, isActive) => {
+    const createButton = (text, page, isActive = false, isDisabled = false) => {
         const button = document.createElement("button");
         button.className = `pagination-button ${isActive ? "active" : ""}`;
-        button.disabled = isDisabled;
         button.textContent = text;
-        if (typeof page === "number") {
-            button.onclick = () => {
-                currentPage = page;
-                renderAICards();
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            };
-        }
+        button.disabled = isDisabled;
+        button.addEventListener("click", () => {
+            currentPage = page;
+            filterAndRender();
+            window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top on page change
+        });
         return button;
     };
 
-    paginationContainer.appendChild(createButton("Previous", currentPage - 1, currentPage === 1));
+    // Previous button
+    paginationContainer.appendChild(createButton("Previous", currentPage - 1, false, currentPage === 1));
 
-    const maxVisiblePages = 5;
-    const pages = [];
+    // Page numbers
+    let startPage = Math.max(1, currentPage - 2);
+    let endPage = Math.min(totalPages, currentPage + 2);
 
-    if (totalPages <= maxVisiblePages) {
-        for (let i = 1; i <= totalPages; i++) {
-            pages.push(i);
-        }
-    } else {
-        if (currentPage <= 3) {
-            for (let i = 1; i <= 4; i++) {
-                pages.push(i);
-            }
-            pages.push("...");
-            pages.push(totalPages);
-        } else if (currentPage >= totalPages - 2) {
-            pages.push(1);
-            pages.push("...");
-            for (let i = totalPages - 3; i <= totalPages; i++) {
-                pages.push(i);
-            }
-        } else {
-            pages.push(1);
-            pages.push("...");
-            for (let i = currentPage - 1; i <= currentPage + 1; i++) {
-                pages.push(i);
-            }
-            pages.push("...");
-            pages.push(totalPages);
-        }
-    }
-
-    pages.forEach(page => {
-        if (page === "...") {
+    if (startPage > 1) {
+        paginationContainer.appendChild(createButton("1", 1));
+        if (startPage > 2) {
             const ellipsis = document.createElement("span");
             ellipsis.className = "pagination-ellipsis";
             ellipsis.textContent = "...";
             paginationContainer.appendChild(ellipsis);
-        } else {
-            paginationContainer.appendChild(createButton(page, page, false, page === currentPage));
         }
-    });
-
-    paginationContainer.appendChild(createButton("Next", currentPage + 1, currentPage === totalPages));
-}
-
-// Function to render filter options
-function renderFilterOptions() {
-    const categoriesContainer = document.getElementById("categories-container");
-    categoriesContainer.innerHTML = "";
-    Object.entries(categories).forEach(([category, count]) => {
-        const label = document.createElement("label");
-        label.className = "filter-option-label";
-        label.innerHTML = `
-            <input type="checkbox" class="filter-checkbox" value="${category}" ${selectedCategories.includes(category) ? "checked" : ""}>
-            <span class="filter-option-text">${category}</span>
-            <span class="filter-option-count">${count}</span>
-        `;
-        label.querySelector("input").onchange = (e) => {
-            if (e.target.checked) {
-                selectedCategories.push(category);
-            } else {
-                selectedCategories = selectedCategories.filter(c => c !== category);
-            }
-            currentPage = 1;
-            renderAICards();
-            updateClearAllButton();
-        };
-        categoriesContainer.appendChild(label);
-    });
-
-    const pricingContainer = document.getElementById("pricing-container");
-    pricingContainer.innerHTML = "";
-    Object.entries(pricingTypes).forEach(([pricing, count]) => {
-        const label = document.createElement("label");
-        label.className = "filter-option-label";
-        label.innerHTML = `
-            <input type="checkbox" class="filter-checkbox" value="${pricing}" ${selectedPricing.includes(pricing) ? "checked" : ""}>
-            <span class="filter-option-text">${pricing}</span>
-            <span class="filter-option-count">${count}</span>
-        `;
-        label.querySelector("input").onchange = (e) => {
-            if (e.target.checked) {
-                selectedPricing.push(pricing);
-            } else {
-                selectedPricing = selectedPricing.filter(p => p !== pricing);
-            }
-            currentPage = 1;
-            renderAICards();
-            updateClearAllButton();
-        };
-        pricingContainer.appendChild(label);
-    });
-}
-
-// Function to update Clear All button visibility
-function updateClearAllButton() {
-    const clearAllBtn = document.getElementById("clear-all-filters-btn");
-    if (selectedCategories.length > 0 || selectedPricing.length > 0 || searchTerm !== "") {
-        clearAllBtn.style.display = "flex";
-    } else {
-        clearAllBtn.style.display = "none";
     }
+
+    for (let i = startPage; i <= endPage; i++) {
+        paginationContainer.appendChild(createButton(i.toString(), i, i === currentPage));
+    }
+
+    if (endPage < totalPages) {
+        if (endPage < totalPages - 1) {
+            const ellipsis = document.createElement("span");
+            ellipsis.className = "pagination-ellipsis";
+            ellipsis.textContent = "...";
+            paginationContainer.appendChild(ellipsis);
+        }
+        paginationContainer.appendChild(createButton(totalPages.toString(), totalPages));
+    }
+
+    // Next button
+    paginationContainer.appendChild(createButton("Next", currentPage + 1, false, currentPage === totalPages));
 }
 
-// Initial render on page load
-document.addEventListener("DOMContentLoaded", () => {
-    // Inject SVG icons
-    document.querySelector(".search-icon").innerHTML = SearchIcon;
-    document.querySelector(".filters-title-group").insertAdjacentHTML("afterbegin", FilterIcon);
-    document.querySelector("#clear-all-filters-btn").insertAdjacentHTML("afterbegin", XIcon);
-
-    // Event Listeners
-    document.getElementById("search-input").addEventListener("input", (e) => {
-        searchTerm = e.target.value;
-        currentPage = 1;
-        renderAICards();
-        updateClearAllButton();
-    });
-
-    document.getElementById("search-button").addEventListener("click", () => {
-        // Search is already handled by input event, this is for explicit click
-        // Could add analytics or other functionality here
-    });
-
-    document.getElementById("clear-all-filters-btn").addEventListener("click", () => {
-        searchTerm = "";
-        selectedCategories = [];
-        selectedPricing = [];
-        currentPage = 1;
-        document.getElementById("search-input").value = "";
-        renderFilterOptions(); // Re-render filters to uncheck checkboxes
-        renderAICards();
-        updateClearAllButton();
-    });
-
-    // Initial renders
-    renderFilterOptions();
-    renderAICards();
-    updateClearAllButton();
+// Event Listeners
+searchButton.addEventListener("click", () => {
+    searchTerm = searchInput.value;
+    currentPage = 1;
+    filterAndRender();
 });
+
+searchInput.addEventListener("keyup", (event) => {
+    if (event.key === "Enter") {
+        searchTerm = searchInput.value;
+        currentPage = 1;
+        filterAndRender();
+    }
+});
+
+clearAllFiltersBtn.addEventListener("click", () => {
+    selectedCategories.clear();
+    selectedPricing.clear();
+    searchTerm = "";
+    searchInput.value = "";
+    currentPage = 1;
+    renderFilters(); // Re-render filters to uncheck checkboxes
+    filterAndRender();
+});
+
+// Hamburger menu for mobile
+hamburgerMenu.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+});
+
+// Initial render
+renderFilters();
+filterAndRender();
+
 
