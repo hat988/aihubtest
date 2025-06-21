@@ -12,6 +12,7 @@ body {
     background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
     min-height: 100vh;
     color: #fff;
+    overflow-x: hidden; /* Prevent horizontal scroll on mobile */
 }
 
 /* Custom scrollbar */
@@ -108,6 +109,26 @@ header {
     color: #fff;
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none; /* Hidden by default, shown on mobile */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    padding: 0.25rem;
+    margin-right: 1rem;
+}
+
+.hamburger-menu .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
 /* Search Bar */
 .search-container {
     flex: 1;
@@ -115,11 +136,12 @@ header {
     margin-left: 2rem;
     margin-right: 2rem;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .search-icon {
     position: absolute;
-    inset-y: 0;
     left: 0;
     padding-left: 1rem;
     display: flex;
@@ -136,8 +158,8 @@ header {
 .search-input {
     display: block;
     width: 100%;
-    padding-left: 3rem;
-    padding-right: 5rem;
+    padding-left: 3rem; /* Increased padding for icon */
+    padding-right: 6rem; /* Increased padding for button */
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -163,14 +185,18 @@ header {
 
 .search-button {
     position: absolute;
-    inset-y: 0;
     right: 0;
-    padding-right: 1rem;
+    padding: 0.75rem 1rem; /* Adjusted padding */
+    height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background: transparent; /* Make button background transparent */
+    border: none;
     color: #9ca3af;
     cursor: pointer;
     transition: color 0.2s ease;
+    border-radius: 0 0.75rem 0.75rem 0; /* Rounded corners on right side */
 }
 
 .search-button:hover {
@@ -205,6 +231,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    transition: transform 0.3s ease-in-out; /* For mobile slide-in */
 }
 
 /* Filters Section */
@@ -249,6 +276,8 @@ header {
     display: flex;
     align-items: center;
     gap: 0.25rem;
+    background: none; /* Ensure no default button background */
+    border: none;
 }
 
 .clear-filters-button:hover {
@@ -522,19 +551,38 @@ header {
     padding: 0.5rem 0.75rem;
 }
 
-/* Footer Ad Placeholder */
-.footer-ad {
-    margin-top: 3rem;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0.75rem;
-    padding: 2rem;
-    text-align: center;
-    color: #9ca3af;
+/* Responsive adjustments */
+@media (max-width: 1023px) {
+    .hamburger-menu {
+        display: flex;
+    }
+    .search-container {
+        margin-left: auto; /* Push search to right */
+        margin-right: 0; /* Remove right margin */
+    }
+    .sidebar {
+        position: fixed;
+        top: 4rem; /* Below header */
+        left: 0;
+        height: calc(100% - 4rem); /* Full height minus header */
+        width: 20rem;
+        background: linear-gradient(135deg, #0f172a 0%, #581c87 100%); /* Match body background */
+        z-index: 40;
+        transform: translateX(-100%); /* Hide by default */
+        padding-top: 1rem; /* Add some top padding */
+        overflow-y: auto; /* Enable scrolling for long filter lists */
+    }
+    .sidebar.open {
+        transform: translateX(0); /* Slide in */
+    }
+    .main-container {
+        padding: 1rem;
+    }
+    .content-area {
+        width: 100%;
+    }
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .header-content {
         padding-left: 1rem;
@@ -547,9 +595,6 @@ header {
     .main-container {
         flex-direction: column;
         padding: 1rem;
-    }
-    .sidebar {
-        width: 100%;
     }
     .ai-cards-grid {
         grid-template-columns: 1fr;
@@ -581,4 +626,5 @@ header {
         font-size: 1.5rem;
     }
 }
+
 
